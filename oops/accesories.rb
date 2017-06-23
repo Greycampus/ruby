@@ -1,13 +1,16 @@
 #!/usr/bin/ruby -w
 
+# defining a class mobile with it's attributes 
 class Mobile 
 	def initialize(screensize , ram, company, processor)
+		# instance variables
 		@screensize = screensize
 		@ram = ram
 		@company = company
 		@processor = processor
 	end
 
+	# class function
 	def price
 		if (@company.downcase == 'samsung'  or @company.downcase=='moto'or @company.downcase=='lenovo' or @company.downcase=='nokia')
 			if(@company.downcase=='samsung')
@@ -26,9 +29,10 @@ class Mobile
 	end
 end
 
-
+# class accessories inhering the properties of mobile
 class Accessories < Mobile
 	def initialize(screensize , ram, company, processor, screenguard , pouch, earphones)
+		#initialising the parent class variables
 		super(screensize , ram, company, processor)
 		@screenguard = screenguard	
 		@pouch = pouch
@@ -36,6 +40,7 @@ class Accessories < Mobile
 
 	end
 
+	# class function
 	def amount
 		cost = self.price
 		totalcost = @screenguard * 200 + @pouch * 300 + @earphones * 700
@@ -44,6 +49,7 @@ class Accessories < Mobile
 	
 end
 
+# reading the input from the console
 puts "Enter the screensize"
 a = gets.chomp.to_f
 puts "Enter RAM size"
@@ -58,5 +64,7 @@ puts "Battery required (yes : 1 , no : 0)"
 f = gets.chomp.to_i
 puts "Charger required (yes : 1 , no : 0)"
 g = gets.chomp.to_i
+# creating a new object
 phone =  Accessories.new(a,b,c,d,e,f,g)
+#calling a class fuction
 phone.amount

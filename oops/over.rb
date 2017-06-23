@@ -16,5 +16,6 @@ class Indian < Person
 
 end
 
+# Creating objects
 Indian.new.welcome("hello") 
 Person.new.welcome("GoodBye")

@@ -1,15 +1,20 @@
 #!/usr/bin/ruby -w
 
 puts "Enter the total number of mediums"
+# reading the input from console
 k = gets.chomp.to_i
 puts "Enter the length of medium"
+# reading the input from console
 l = gets.chomp.to_i
 puts "Enter the height from wich the ball is thrown"
+# reading the input from console
 h = gets.chomp.to_i
 puts "Enter distance travelled in each step"
+# reading the input from console
 d = gets.chomp.to_i
 puts "Enter quotients of loss for #{d} mediums"
 i = 0
+# initialising an array
 kq = Array.new 
 while i < k
 	puts "Medium : #{i+1}"

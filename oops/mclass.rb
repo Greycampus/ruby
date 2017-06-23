@@ -30,7 +30,7 @@ class Mobile
 	end
 end
 
-
+#reading the input from console
 puts "Enter the screensize"
 a = gets.chomp.to_f
 puts "Enter RAM size"
@@ -39,5 +39,7 @@ puts "Enter company name"
 c = gets.chomp
 puts "enter processoressor speed"
 d = gets.chomp.to_f
+# creating a new object for class mobile
 phone = Mobile.new(a,b,c,d)
+# calling a class function with an object
 phone.price

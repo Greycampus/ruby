@@ -17,5 +17,5 @@ elsif a > 40 and a <=60 # percent lies between 40 and 60
 elsif a > 35 and a <=40 # percent lies between 35 and 40
 	puts "GRADE - E"
 else
-	puts "GRADE - E and ssssssssssssssssssssssssssssssssssssssssssssssCandidate Failed"
+	puts "GRADE - E and Candidate Failed"
 end

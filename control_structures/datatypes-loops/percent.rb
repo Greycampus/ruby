@@ -11,6 +11,7 @@ while a > 0
 	# reading the details of the students
 	puts "Enter the details of student"
 	b = gets.chomp.split(" ")
+	# Adding data to the array
 	marks.push(b)
 	a = a - 1
 end
@@ -19,6 +20,7 @@ puts "Enter the name of the student"
 # reading the data from the console
 c = gets.chomp.to_s
 
+# iterating the array
 marks.each{
 	|x|
 	if x[0] == c

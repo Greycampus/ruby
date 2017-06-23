@@ -3,6 +3,7 @@
 # Defining the function fact
 def fact(n)						
 	if n == 1 or n == 0
+		# return statement passes the result of the function
 		return 1
 	else 
 		# Recursive call of the function recursion

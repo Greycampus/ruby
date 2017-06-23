@@ -1,14 +1,16 @@
 #!/usr/bin/ruby -w
 
-k = Array.new(6)
-k = [1,2,3,4,5,6]
-puts "List taken:"
+# initilialising an array 
+k = Array.new(6){|x| x = x + 1 }
+puts "Array taken:"
+# printing the array
 p k
 str = ""
 print "Converted string :"
 k.each{
 	|x|
+	# accesing each value of array
 	str = str + x.to_s
 }
-
+# printing the output
 p str

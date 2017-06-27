@@ -405,6 +405,7 @@ If this method is called without a block, it will return an `enumerator`. To con
 | [1,2,3].permutation(4).to_a | [] -> No permutations of length 4                 |
 
 The `combination` method on the other hand, when called with a block yields a two-dimensional array consisting of all sequences of a collection of numbers. Unlike permutation, order is disregarded in combinations. For example, `[1,2,3]` is the same as `[3,2,1]`
+
 | Example                     | Result                            |
 |-----------------------------|-----------------------------------|
 | [1,2,3].combination(1)      | #<Enumerator: [1,2,3]:combination |
@@ -417,6 +418,7 @@ Calling the combination method by itself will result in an enumerator. To get an
 The `repeated_combination` and `repeated_permutation` methods are similar, except the same element can be repeated multiple times.
 
 For example the sequences `[1,1]`, `[1,3,3,1]`, `[3,3,3]` would not be valid in regular combinations and permutations.
+
 | Example                                     | # Combos |
 |---------------------------------------------|----------|
 | [1,2,3].combination(3).to_a.length          | 1        |

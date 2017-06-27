@@ -151,3 +151,47 @@ rectangular.polar # => [3.605551275463989, 0.982793723247329]
 rectangular + polar # => (1.5838531634528576+3.909297426825682i)
 ```
 
+Strings
+======
+
+A String object holds and manipulates an arbitrary sequence of bytes, typically representing characters. String objects may be created using String::new or as literals.
+
+Quotes
+------
+
+Ruby string literals are enclosed within single and double quotes.
+
+Example:
+```
+!/usr/bin/ruby
+puts 'Hello everyone'
+puts "Hello everyone"  
+```
+
+
+Difference between single-quoted and double-quoted String literals
+------------------------------------------------------------------
+
+
+The main difference is that double-quoted String literals support string interpolations and the full set of escape sequences.
+
+For instance, they can include arbitrary Ruby expressions via interpolation:
+```
+# Single-quoted strings don't support interpolation
+puts 'Now is #{Time.now}'
+# Now is #{Time.now}
+
+# Double-quoted strings support interpolation
+puts "Now is #{Time.now}"
+# Now is 2016-07-21 12:43:04 +0200
+```
+Double-quoted strings also support the entire set of escape sequences including "\n", "\t"...
+```
+puts 'Hello\nWorld'
+# Hello\nWorld
+
+puts "Hello\nWorld"
+# Hello
+# World
+```
+... while single-quoted strings support no escape sequences, baring the minimal set necessary for single-quoted strings to be useful: Literal single quotes and backslashes, '\'' and '\\' respectively.

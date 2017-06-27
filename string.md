@@ -94,6 +94,7 @@ puts "Now is #{Time.now}"
 # Now is Now is 2016-07-21 12:47:45 +0200
 puts %Q(Now is #{Time.now})
 # Now is Now is 2016-07-21 12:47:45 +0200
+```
 
 Formatted strings
 -----------------

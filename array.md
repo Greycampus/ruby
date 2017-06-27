@@ -396,12 +396,14 @@ Get all combinations / permutations of an array
 The `permutation` method, when called with a block yields a two dimensional array consisting of all ordered sequences of a collection of numbers.
 
 If this method is called without a block, it will return an `enumerator`. To convert to an array, call the `to_a` method.
+
 | Example                     | Result                                            |
 |-----------------------------|---------------------------------------------------|
 | [1,2,3].permutation         | #<Enumerator: [1,2,3]:permutation                 |
 | [1,2,3].permutation.to_a    | [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] |
 | [1,2,3].permutation(2).to_a | [[1,2],[1,3],[2,1],[2,3],[3,1],[3,2]]             |
 | [1,2,3].permutation(4).to_a | [] -> No permutations of length 4                 |
+
 The `combination` method on the other hand, when called with a block yields a two-dimensional array consisting of all sequences of a collection of numbers. Unlike permutation, order is disregarded in combinations. For example, `[1,2,3]` is the same as `[3,2,1]`
 | Example                     | Result                            |
 |-----------------------------|-----------------------------------|

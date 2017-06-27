@@ -106,7 +106,7 @@ Ruby can inject an array of values into a string by replacing any placeholders w
 ```
 The place holders are represented by two %s and the values are supplied by the array ['Hello', 'br3nt']. The % operator instructs the string to inject the values of the array.
 
-```
+
 
 Multi-line strings
 -----------------
@@ -132,7 +132,6 @@ Ruby supports shell-style here documents with `<<EOT`, but the terminating text 
 
 Ruby 2.3 solves the problem by introducing `<<~` which strips out excess leading spaces:
 
-2.3
 ```ruby
 def build_email(address)
   return (<<~EMAIL)
@@ -303,21 +302,21 @@ Example:
 ```ruby
 #!/usr/bin/ruby   
 puts "abc" == "abc"
-# true
+# => true
 puts "as ab" == "ab ab"   
-# false
+# => false
 puts "23" == "32"   
-false
+# => false
 
 puts "ttt".eql? "ttt"   
 true
 puts "12".eql? "12"   
-true
+# => true
       
 puts "Grey".casecmp "Grey"   
-# 0
+# => 0
 puts "Grey".casecmp "grey"
-# 0   
+# => 0   
 puts "Grey".casecmp "gr"  
-# 1
+# => 1
 ```

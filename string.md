@@ -351,6 +351,7 @@ Single quote the terminal string in a heredoc:
     CODE
 ```
 Comparing Strings
+----------------
 
 Ruby strings can be compared with three operators:
 

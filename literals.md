@@ -7,7 +7,7 @@ Literals create objects you can use in your program. Literals include:
 
  - Numbers
 
- -  Strings
+ - Strings
 
  - Symbols
 

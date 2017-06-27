@@ -94,6 +94,17 @@ puts "Now is #{Time.now}"
 # Now is Now is 2016-07-21 12:47:45 +0200
 puts %Q(Now is #{Time.now})
 # Now is Now is 2016-07-21 12:47:45 +0200
+
+Formatted strings
+-----------------
+
+Ruby can inject an array of values into a string by replacing any placeholders with the values from the supplied array.
+```ruby
+"Hello %s, my name is %s!" % ['World', 'br3nt']
+# Hello World, my name is br3nt!
+```
+The place holders are represented by two %s and the values are supplied by the array ['Hello', 'br3nt']. The % operator instructs the string to inject the values of the array.
+
 ```
 
 Multi-line strings
@@ -159,6 +170,35 @@ Single quote the terminal string in a heredoc:
     CODE
 
 ```
+
+Accessing string elements
+
+You can access Ruby string elements in different parts with the help of square brackets []. Within square brackets write the index or string.
+
+Example:
+```ruby
+#!/usr/bin/ruby   
+msg = "This tutorial is from Grey Campus." 
+# "This tutorial is from Grey Campus."
+puts msg["Grey Campus"]
+# Grey Campus   
+puts msg["tutorial"]
+# tutorial
+puts msg[0]
+# T         
+puts msg[0, 2]   .
+# Th
+puts msg[0..32]
+# This tutorial is from Grey Campus   
+puts msg[0, msg.length]
+# This tutorial is from Grey Campus.
+puts msg[-3]
+# u
+puts msg[-12..-1]
+# Grey Campus.
+
+```
+
 
 Case manipulation
 -----------------
@@ -249,3 +289,94 @@ str.center(4)          => "abcd"
 str.center(10)         => "   abcd   "
 ```
 
+Multi-line strings
+-----------------
+
+The easiest way to create a multi-line string is to just use multiple lines between quotation marks:
+```ruby
+address = "Four score and seven years ago our fathers brought forth on this
+continent, a new nation, conceived in Liberty, and dedicated to the
+proposition that all men are created equal."
+```
+The main problem with that technique is that if the string includes a quotation, it'll break the string syntax. To work around the problem, you can use a heredoc instead:
+```ruby
+puts <<-RAVEN
+  Once upon a midnight dreary, while I pondered, weak and weary, 
+  Over many a quaint and curious volume of forgotten lore— 
+      While I nodded, nearly napping, suddenly there came a tapping, 
+  As of some one gently rapping, rapping at my chamber door. 
+  "'Tis some visitor," I muttered, "tapping at my chamber door— 
+              Only this and nothing more." 
+  RAVEN
+```
+Ruby supports shell-style here documents with `<<EOT`, but the terminating text must start the line. That screws up code indentation, so there's not a lot of reason to use that style. Unfortunately, the string will have indentations depending no how the code itself is indented.
+
+Ruby 2.3 solves the problem by introducing `<<~` which strips out excess leading spaces:
+
+```ruby
+def build_email(address)
+  return (<<~EMAIL)
+    TO: #{address}
+
+    To Whom It May Concern:
+
+    Please stop playing the bagpipes at sunrise!
+                     
+    Regards,
+    Your neighbor               
+  EMAIL
+end
+```
+Percent Strings also work to create multiline strings:
+```ruby
+%q(
+HAMLET        Do you see yonder cloud that's almost in shape of a camel?
+POLONIUS        By the mass, and 'tis like a camel, indeed.
+HAMLET        Methinks it is like a weasel.
+POLONIUS        It is backed like a weasel.
+HAMLET        Or like a whale?
+POLONIUS        Very like a whale
+)
+```
+There are a few ways to avoid interpolation and escape sequences:
+
+Single quote instead of double quote: `'\n is a carriage return.'`
+
+Lower case `q` in a percent string:` %q[#{not-a-variable}]`
+
+Single quote the terminal string in a heredoc:
+```ruby
+    <<-'CODE'
+       puts 'Hello world!'
+    CODE
+```
+Comparing Strings
+
+Ruby strings can be compared with three operators:
+
+- With == operator : Returns true or false
+- With eql? Operator : Returns true or false
+- With casecmp method : Returns 0 if matched or 1 if not matched
+
+Example:
+```ruby
+#!/usr/bin/ruby   
+puts "abc" == "abc"
+# true
+puts "as ab" == "ab ab"   
+# false
+puts "23" == "32"   
+false
+
+puts "ttt".eql? "ttt"   
+true
+puts "12".eql? "12"   
+true
+      
+puts "Grey".casecmp "Grey"   
+# 0
+puts "Grey".casecmp "grey"
+# 0   
+puts "Grey".casecmp "gr"  
+# 1
+```

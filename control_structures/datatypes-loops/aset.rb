@@ -8,7 +8,7 @@ msg = "enter list of your choice with repeatitions"
 puts msg
 # gets is used to read the input from console
 a = gets
-# chomp is used to delete the spaces before and after the
+# chomp method gives you back the string, but without the terminating newline
 a = a.chomp
 # initilising an array
 b = Array.new

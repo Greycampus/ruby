@@ -41,7 +41,8 @@ Access Levels
 Ruby has three access levels. They are `public`, `private` and `protected`.
 
 Methods that follow the `private` or `protected` keywords are defined as such. Methods that come before these are implicitly `public` methods.
-####**Public Methods**
+
+#### **Public Methods** ####
 
 A public method should describe the behavior of the object being created. These methods can be called from outside the scope of the created object.
 ```ruby
@@ -82,7 +83,8 @@ def MyClass
   end
 end
 ```
-####**Private Methods**
+
+#### **Private Methods** ####
 
 Private methods are not accessible from outside of the object. They are used internally by the object. Using the cat example again:
 ```ruby

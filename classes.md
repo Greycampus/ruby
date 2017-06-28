@@ -111,7 +111,8 @@ my_cat.calculate_cat_age #=> NoMethodError: private method `calculate_cat_age' c
 As you can see in the example above, the newly created Cat object has access to the `calculate_cat_age` method internally. We assign the variable `age` to the result of running the private `calculate_cat_age` method which prints the name and age of the cat to the console.
 
 When we try and call the `calculate_cat_age` method from outside the `my_cat` object, we receive a `NoMethodError` because it's private. Get it?
-####**Protected Methods**
+
+#### **Protected Methods**
 
 Protected methods are very similar to private methods. They cannot be accessed outside the instance of object in the same way private methods can't be. However, using the `self` ruby method, protected methods can be called within the context of an object of the same type.
 ```ruby

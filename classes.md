@@ -219,7 +219,7 @@ Class Methods types
 -------------------
 
 Classes have 3 types of methods: instance, singleton and class methods.
-####**Instance Methods**
+#### **Instance Methods**
 
 These are methods that can be called from an `instance` of the class.
 ```ruby
@@ -232,7 +232,7 @@ end
 foo = Thing.new # create an instance of the class
 foo.somemethod # => something
 ```
-####**Class Method**
+#### **Class Method**
 
 These are static methods, i.e, they can be invoked on the class, and not on an instantiation of that class.
 ```ruby
@@ -254,7 +254,7 @@ Invoke the method by writing
 ```ruby
 Thing.hello("John Doe")  # prints: "Hello, John Doe!"
 ```
-####**Singleton Methods**
+#### **Singleton Methods**
 
 These are only available to specific instances of the class, but not to all.
 ```ruby

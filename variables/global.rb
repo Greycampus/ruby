@@ -1,16 +1,24 @@
 #!/usr/bin/ruby -w
 
+# defining a user defined function 'glob' 
 def glob()
-	#GLOBAL VARIABLE (can be accessed anywhere in the entire program)
+	# GLOBAL VARIABLE (can be accessed anywhere in the entire program)
 	$pi = 3.14159 
 end 
 
-#calling the method
+# calling the method
 glob()
-puts "enter the radius of the circle"
+# storing the console message in variable
+msg = "Enter the radius of the circle"
+# printing the msg to the console
+puts msg
 #reading input from console 
-radius = gets.chomp.to_f
-#Here the input from the console is type-casted into float using to_f
-#Calculating the area of circle
-area = $pi * radius * radius
-puts "Area of circle with radius #{radius} is #{area}"
+r = gets
+# chomp method returns a new String with the given record separator removed from the end of str (if present)
+r = r.chomp
+# to_f is used to typecast string to float
+r = r.to_f
+# Here the input from the console is type-casted into float using to_f
+# Calculating the area of circle
+area = $pi * r * r
+puts "Area of circle with radius #{r} is #{area}"

@@ -13,7 +13,10 @@ def gcdd(a,b)
 	end
 end
 
-puts "Enter the numbers whose G.C.D is to be found"
+# storing the console message in variable
+msg = "Enter the numbers whose G.C.D is to be found"
+# printing the msg to the console 
+puts msg
 # read the first number
 a = gets.chomp.to_i
 # read the second number

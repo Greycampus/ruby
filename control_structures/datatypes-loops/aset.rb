@@ -8,7 +8,7 @@ msg = "enter list of your choice with repeatitions"
 puts msg
 # gets is used to read the input from console
 a = gets
-# chomp method gives you back the string, but without the terminating newline
+# chomp method returns a new String with the given record separator removed from the end of str (if present)
 a = a.chomp
 # initilising an array
 b = Array.new

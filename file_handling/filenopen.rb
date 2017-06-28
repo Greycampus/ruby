@@ -1,7 +1,10 @@
 #!/usr/bin/ruby -w
 
 f = File.read("text.txt")
-puts "Enter the line number to be printed"
+# storing the console message in variable
+msg = "Enter the line number to be printed"
+# printing the msg to the console
+puts msg
 # reading the input from the console
 a = gets.chomp.to_i
 # initialising an array

@@ -1,9 +1,15 @@
 #!/usr/bin/ruby -w
 
-puts "Enter the Percentage of student"
+# storing the console message in variable
+msg = "Enter the Percentage of student"
+# printing the msg to the console
+puts msg
 # reading the input from console
-a = gets.chomp.to_i
-
+a = gets
+# chomp method returns a new String with the given record separator removed from the end of str (if present)
+a = a.chomp
+# to_i is used to typecast string to integer
+a = a.to_i
 if a > 85 # percent
 	puts "GRADE - A"
 elsif a > 80 and a <=85 # percent greater than 85

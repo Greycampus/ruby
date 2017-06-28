@@ -1,8 +1,15 @@
 #!/usr/bin/ruby -w
 
-puts "Enter a number"
+# storing the console message in variable
+msg = "Enter a number"
+# printing the msg to the console
+puts msg
 # reading th input from console
-a = gets.chomp.to_i
+a = gets
+# chomp method returns a new String with the given record separator removed from the end of str (if present)
+a = a.chomp
+# to_i is used to typecast string to integer
+a = a.to_i
 # In if-else the condition is checked and statemets in it are evaluated when the condition is satisfied, otherwise else is executed 
 if a % 2 != 0 and a % 9 == 0 
 	puts "#{a} is a odd number and a multiple of 9"

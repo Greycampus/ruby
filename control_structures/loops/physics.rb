@@ -18,7 +18,9 @@ i = 0
 kq = Array.new 
 while i < k
 	puts "Medium : #{i+1}"
+	# adding the elements in the array
 	kq.push(gets.chomp.to_f)
+	# incrementing the loop
 	i = i + 1
 end
 

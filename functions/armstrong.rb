@@ -3,24 +3,23 @@
 # user defined armstrong function
 def armstrong(num)
 	sum = 0
-	# dup is used to store duplicate of a variable
-	copy = num.dup
-	while num > 0
-		temp = num % 10
-		num = num / 10
-		# Math.log10(copy).to_i + 1 is used to find the length of the string
-		sum = sum + ( temp ** (Math.log10(copy).to_i + 1) )
-	end
-	if copy == sum
+	num.each_char{
+		|x|
+		sum = sum + x.to_i ** num.length
+	}
+	if num.to_i == sum
 		return true
 	else
 		return false
 	end
 end
 
-puts "Enter a number"
+# storing the console message in variable
+msg = "Enter a number"
+# printing the msg to the console
+puts msg
 # reading the input from the console
-a = gets.chomp.to_i
+a = gets.chomp
 # calling the function
 if (armstrong(a))
 	puts "Armstrong number"

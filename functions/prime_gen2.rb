@@ -18,6 +18,7 @@ end
 
 # checking whether the prime meets required condition
 def mp(n)
+	# initilising an array
 	prime = Array.new(n+1,true)
 	prime = soe(n,prime)
 	k = 2
@@ -35,11 +36,12 @@ def mp(n)
 	end
 end
 
-
-
-puts "Enter the number"
+# storing the console message in variable
+msg = "Enter the number"
+# printing the msg to the console
+puts msg
 # reading the input from the console
 n = gets.chomp.to_i
 puts "Primes less than #{n} are"
-
+# calling the function
 mp(n)

@@ -2,15 +2,15 @@
 
 # initilialising an array 
 k = Array.new(6){|x| x = x + 1 }
-puts "Array taken:"
+print "Array taken: "
 # printing the array
 p k
-str = ""
-print "Converted string :"
+string = ""
 k.each{
 	|x|
 	# accesing each value of array
-	str = str + x.to_s
+	string = string + x.to_s
 }
 # printing the output
-p str
+print "Converted string : "
+p string

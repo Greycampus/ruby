@@ -1,21 +1,21 @@
 #!/usr/bin/ruby -w
-#!/usr/bin/ruby -w
 
-puts "Enter the coefficients of the Quadratic equation"
+# storing the console message in variable
+msg = "Enter the coefficients of the Quadratic equation"
+# printing the msg to the console
+puts msg 
 # reading the coefficients from console
-a = gets.chomp
+equa = gets
 # initilizing an array
 coef = Array.new
 # splitting the values when " " occurs and converting the values into float simultaneously
-coef = a.split(" ").map(&:to_f)
-# initilizing an array with length of coef array and values 0..length-1
-mul = Array.new(coef.count){ |x| x = x }
+coef = equa.split(" ").map(&:to_f)
 #intilizing an array
 defe = Array.new
 #Here the index in mul mul[-i] indicate the i'th element from last
 i = 0
-while i < mul.count
-	defe[i] = coef[i] * mul[-i-1]
+while i < coef.count
+	defe[i] = coef[i] * (coef.length - i - 1)
 	# incrementing the loop
 	i = i + 1
 end
@@ -23,8 +23,9 @@ end
 puts "After Differentiation the Equation is"
 puts "#{defe[0]}x%+f = 0"%defe[1]
 # printing the value 
+mai = -defe[1]/defe[0]
 if coef[0] > 0
-	puts "Minimum value of given equation is at x = #{-defe[1]/defe[0]}"
+	puts "Minimum value of given equation is at x = #{mai}"
 else
-	puts "Maximum value of given equation is at x = #{-defe[1]/defe[0]}"
+	puts "Maximum value of given equation is at x = #{mai}"
 end

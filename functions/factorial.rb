@@ -11,11 +11,11 @@ def fact(n)
 	end
 end
 
-
-puts "Enter the number" 
-
+# storing the console message in variable
+msg = "Enter the number" 
+# printing the msg to the console
+puts msg
 # Reading the input from console
-n = gets.chomp.to_i					
-
+k = gets.chomp.to_i					
 # Calling the function "fact"
 puts "Factorial is #{fact(n)}"				

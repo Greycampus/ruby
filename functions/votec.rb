@@ -46,7 +46,10 @@ def vote(a)
 	end
 end
 
-puts "Enter the string"
+# storing the console message in variable
+msg = "Enter the string"
+# printing the msg to the console
+puts msg
 #reading the input from the console
 a = gets.chomp.to_s
 # callin nthe function vote 

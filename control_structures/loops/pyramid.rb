@@ -1,6 +1,9 @@
 #!/usr/bin/ruby -w
 
-puts "Enter the height of pyramid"
+# storing the console message in variable
+msg = "Enter the height of pyramid"
+# printing the msg to the console
+puts msg
 # reading the input from console
 a = gets.chomp.to_i
 i = 0

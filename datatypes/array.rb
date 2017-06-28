@@ -1,12 +1,20 @@
 #!/usr/bin/ruby -w
 
-puts "Enter the number of elements"
+# storing the console message in variable
+msg = "Enter the number of elements"
+# printing the msg to the console
+puts msg
 # reading the input from console
-a = gets.chomp.to_i
+a = gets
+# chomp method returns a new String with the given record separator removed from the end of str (if present)
+a = a.chomp
+# to_i is used to typecast string to integer
+a = a.to_i
 # Initilizing an array
 num = Array.new
-# Reading the elements of array
-puts "Enter the elements"
+# storing the console message in variable
+msg = "Enter the elements"
+puts msg
 # Reading the elements of the array from console
 while (a > 0)
 	# push is used to add the elements to the array

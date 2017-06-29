@@ -60,11 +60,10 @@ Ruby Case Statement
 Ruby uses the case keyword for switch statements.
 
 As per the Ruby Docs:
-```ruby
-    Case statements consist of an optional condition, which is in the position of an argument to case, and zero or more when clauses. The first when clause to match the condition (or to evaluate to Boolean truth, if the condition is null) “wins”, and its code stanza is executed. The value of the case statement is the value of the successful when clause, or nil if there is no such clause.
 
-    A case statement can end with an else clause. Each when a statement can have multiple candidate values, separated by commas.
-```
+- Case statements consist of an optional condition, which is in the position of an argument to case, and zero or more when clauses. The first when clause to match the condition (or to evaluate to Boolean truth, if the condition is null) “wins”, and its code stanza is executed. The value of the case statement is the value of the successful when clause, or nil if there is no such clause.
+- A case statement can end with an else clause. Each when a statement can have multiple candidate values, separated by commas.
+
 Example:
 ```ruby
 case x

@@ -32,7 +32,7 @@ Multiple words can be interpreted by escaping the space with a \.
 Create Array with Array::new
 ----------------------------
 
-An empty Array ([]) can be created with Array's class method, Array::new:
+An empty Array ([]) can be created with Array's class method, `Array:new`:
 ```ruby
 Array.new    
 ```

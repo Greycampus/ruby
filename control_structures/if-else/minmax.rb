@@ -1,5 +1,18 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to find maxima or minima of a given Quadratic equation
+INPUT
+Enter the coefficients of the Quadratic equation
+1 2 1
+
+OUTPUT
+After Differentiation the Equation is
+2.0x+2.000000 = 0
+Minimum value of given equation is at x = -1.0
+=end
+
+
 # storing the console message in variable
 msg = "Enter the coefficients of the Quadratic equation"
 # printing the msg to the console

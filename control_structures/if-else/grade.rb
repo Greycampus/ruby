@@ -1,9 +1,26 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to print the grade of person using the following conditions
+  ->A if percentage >85
+  ->A- if %<=85 and >80
+  ->B if %<=80 and >70
+  ->C if %<=70 and >60
+  ->D if %<=60 and >40
+  ->E if %<=40 and also should print 'candidate failed' if %<=35
+
+INPUT
+Enter the Percentage of student
+55
+OUTPUT
+GRADE - D
+
+=end
+
 # storing the console message in variable
-msg = "Enter the Percentage of student"
+message = "Enter the Percentage of student"
 # printing the msg to the console
-puts msg
+puts message
 # reading the input from console
 a = gets
 # chomp method returns a new String with the given record separator removed from the end of str (if present)

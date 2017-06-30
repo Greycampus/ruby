@@ -1,5 +1,22 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to print as follows for given input
+
+INPUT
+Enter the number
+3
+Enter the width
+9
+
+OUTPUT
+----A----
+---BBB---
+--CCCCC--
+---BBB---
+----A----
+=end
+
 # storing the console message in variable
 msg = "Enter the number"
 # printing the msg to the console

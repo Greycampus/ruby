@@ -1,5 +1,19 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to find derivative and integral of polynomial
+
+INPUT
+Enter the coefficients of the equation
+1 2 3 4 5
+
+OUTPUT
+After Differention Equation is : 
++4.000000x^3 +6.000000x^2 +6.000000x^1  +4.000000
+After Integration the Equation is :
++0.200000x^5 +0.500000x^4 +1.000000x^3 +2.000000x^2 +5.000000x^1  + C
+=end
+
 # storing the console message in variable
 msg = "Enter the coefficients of the equation"
 # printing the msg to the console

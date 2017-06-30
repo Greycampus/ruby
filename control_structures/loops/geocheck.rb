@@ -1,5 +1,20 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to check whether a given number is in a goemetric progression or not for a given initial value and factor
+
+INPUT
+Enter the initial term
+3
+Enter the ratio in the series(only integer values)
+6
+Enter the number you want to check
+234545
+
+OUTPUT 
+not in series
+=end
+
 # storing the console message in variable
 msg = "Enter the initial term"
 # printing the msg to the console

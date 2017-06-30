@@ -1,11 +1,22 @@
 #!/usr/bin/ruby -w
 
+=begin 
+Ruby program to read name of the user and print hello user
+
+INPUT 
+Username
+
+OUTPUT
+Hello Username
+=end
+
+
 # storing the console message in variable
-msg = "what's your name ?"
+message = "what's your name ?"
 # printing the msg to the console
-puts msg
+puts message
 # Reading the input from console
-a = gets
+username = gets
 # By default input is read as string unless type casted
 # printing the USERNAME
-puts "Hello #{a}"
+puts "Hello #{username}"

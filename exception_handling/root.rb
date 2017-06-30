@@ -1,5 +1,25 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to use exception handling to prevent the calculation of roots of quadratic equation if root as complex
+
+INPUT
+Enter the equation in the form of 1 2 1 if equation is x^2 + 2x + 1:
+1 2 1
+
+OUTPUT
+roots are :
+-1.0
+-1.0
+
+INPUT
+Enter the equation in the form of 1 2 1 if equation is x^2 + 2x + 1:
+1 1 1
+
+OUTPUT
+Roots are imaginary so calculation stopped
+=end
+
 class Complexerror < Exception
 end
 

@@ -1,5 +1,15 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to replace all the patterns like '[!*]' without using loops
+
+INPUT
+enter the string
+Grey[![!*]*]Campus
+String before modification : Grey[![!*]*]Campus
+String after modification : GreyCampus
+=end
+
 # storing the console message in variable
 msg = "enter the string"
 # printing the msg to the console

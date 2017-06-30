@@ -1,5 +1,15 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to Find the sum of the numbers in a string
+
+INPUT
+enter the alphanumeric string
+afgafg5^[[17~454 tawefh483562bt 872 5btc4bt v67t67i23qb]
+
+OUTPUT
+The sum is 111
+=end
 
 # storing the console message in variable
 msg = "enter the alphanumeric string"

@@ -1,5 +1,13 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to Use Function Overriding and polymorphism in a class
+
+OUTPUT
+B's hello
+A's GoodBye
+=end
+
 class A
 
   def m1(msg)

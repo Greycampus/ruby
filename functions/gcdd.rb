@@ -1,5 +1,17 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to find gcd of two numbers using functions
+
+INPUT
+Enter the numbers whose G.C.D is to be found
+65
+35 
+
+OUTPUT
+G.C.D of 65 , 35 is 5
+=end
+
 # gcd is a user defined function
 # Here a,b are the parameters passed to the function gcd
 def gcdd(a,b)

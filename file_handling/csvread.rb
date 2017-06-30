@@ -1,5 +1,17 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to open a csv file and print only the second column in the file
+
+OUTPUT
+The data in second column is : 
+31
+12
+45
+56
+63
+=end
+
 # importing the csv library
 require 'csv'
 # reading the csv file seperated by , string

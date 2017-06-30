@@ -1,5 +1,17 @@
 #!/usr/bin/ruby
 
+=begin
+Ruby program to use iterators to generate the multiples of two and three
+
+INPUT
+Enter the number of terms
+6
+
+OUTPUT
+Multiples of both two and three are : 
+[6, 12, 18, 24, 30, 36]
+=end
+
 # storing the console message in variable
 msg = "Enter the number of terms"
 # printing the msg to the console

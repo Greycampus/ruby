@@ -1,5 +1,36 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to use Exception handling to catch divided by zero and divided by power of 2 exceptions
+
+INPUT
+enter the numerator
+23
+enter the denominator
+0
+
+OUTPUT
+Shouln't be divided by zero
+
+INPUT
+enter the numerator
+100
+enter the denominator
+32
+
+OUTPUT
+Shouldn't be divided by Power of 2
+
+INPUT
+enter the numerator
+999
+enter the denominator
+9
+
+OUTPUT
+111.0
+=end
+
 # user defined class
 class Zero2 < Exception 
 end

@@ -1,5 +1,18 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to find the voting result based on a string input such that a letter using functions
+
+INPUT
+Enter the string
+asdfasdfasdfsdafdsafsdafsdfsdfdasf
+
+OUTPUT
+it's a tie between s,d,f
+with hightest number of votes 9
+
+=end
+
 # user defined function vote
 def vote(a)
 	i = 0

@@ -1,5 +1,16 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to write function to find whether a given number is armstrong number or not
+
+INPUT
+Enter a number
+370 
+
+OUTPUT
+Armstrong number
+=end
+
 # user defined armstrong function
 def armstrong(num)
 	sum = 0

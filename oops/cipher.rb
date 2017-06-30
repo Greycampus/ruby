@@ -1,5 +1,19 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to implement ceaser cipher 
+
+INPUT
+Enter the text to be encrypted
+adfhaff3fag43rag43rg4
+Enter shift value for ceaser cipher
+1231
+
+OUTPUT
+Entered plain text : adfhaff3fag43rag43rg4
+Cipher text is :jmoqjoopojpqpajpqpapq
+=end
+
 # Class cipher 
 class Cipher
 	# instance variables

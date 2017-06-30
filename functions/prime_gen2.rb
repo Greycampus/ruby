@@ -1,5 +1,22 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to write a function to generate sequence of primes that are exactly at absoute difference of 1 with powers of two
+
+INPUT
+Enter the number
+200
+
+OUTPUT
+Primes less than 200 are
+3
+5
+7
+17
+31
+127
+=end
+
 # seive of erathosthenes to generate primes
 def soe(n , prime)
 	p = 2

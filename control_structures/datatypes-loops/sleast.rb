@@ -1,5 +1,30 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to print the name of student having second least percentage from the given list of students  if
+there are multiple students should print multiple students in alphabetical order
+
+INPUT
+Enter the number of students
+5          
+Enter the details of students
+rag 
+77
+teja
+89
+bhavana
+84
+praveen
+77	
+bhadram
+75
+
+OUTPUT
+praveen
+rag
+
+=end
+
 # storing the console message in variable
 msg = "Enter the number of students"
 # printing the msg to the console

@@ -1,5 +1,16 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to open a text file and print the nth line in text file if nth line does not exist print 'no data'
+
+INPUT
+Enter the line number to be printed
+3
+
+OUTPUT
+speed : 1 THz
+=end
+
 f = File.read("text.txt")
 # storing the console message in variable
 msg = "Enter the line number to be printed"

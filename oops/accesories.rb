@@ -1,5 +1,28 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to Use the mobile phone class as parent and build the accessory class for a shop for biling purpose
+
+INPUT
+Enter the screensize
+6
+Enter RAM size
+2
+Enter company name
+moto
+enter processor speed
+1.2
+Earphone required (yes : 1 , no : 0)
+1
+Battery required (yes : 1 , no : 0)
+1
+Charger required (yes : 1 , no : 0)
+0
+
+OUTPUT
+The price of moto mobile with accessories is nearly 28995
+=end
+
 # defining a class mobile with it's attributes 
 class Mobile 
 	def initialize(screensize , ram, company, processor)

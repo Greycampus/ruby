@@ -1,5 +1,27 @@
 #!/usr/bin/ruby -w
 
+=begin
+Ruby program to build a class to store the data of the mobile phones with screen size,ram,company and processor along with Constructor and function to estimate cost of phone based on conditions
+  samsung:7000(pr)
+  moto:5999
+  lenovo:4000
+  nokia:6100
+  est cost = pr*(scr size/4.0)+pr*(ram/1.0)+pr*(proc/1.0)+0.05*pr(class)
+
+INPUT
+Enter the screensize
+6
+Enter RAM size
+3
+Enter company name
+samsung
+enter processoressor speed
+1.2
+
+OUTPUT
+The price of samsung mobile is nearly 40250
+=end
+
 # class mobile is a user defined class
 class Mobile 
 	# screensize ram company processor are attributes of the mobile

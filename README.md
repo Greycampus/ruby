@@ -1,3 +1,4 @@
+```ruby
 #!/usr/bin/ruby -w
 
 # storing the console message in variable
@@ -30,3 +31,4 @@ marks.each{
 		puts "Precentage is #{(total/3).to_f}"
 	end
 }
+```

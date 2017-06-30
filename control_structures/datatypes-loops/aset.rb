@@ -1,3 +1,4 @@
+```ruby
 #!/usr/bin/ruby -w
 
 # importing required libraries
@@ -19,3 +20,4 @@ b = a.split(" ")
 c = b.to_set
 # printing the set
 p c
+```

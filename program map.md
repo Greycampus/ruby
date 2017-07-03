@@ -54,7 +54,7 @@ File Handling
 Functions
 
 - Function for GCD of two numbers - [gcdd.rb](https://github.com/Greycampus/ruby/blob/master/functions/gcdd.rb)
-- Function to find whether a number is armstrong number or not -[armstrong.rb](https://github.com/Greycampus/ruby/blob/master/functions/armstrong.rb)
+- Function to find whether a number is armstrong number or not -[arms.rb](https://github.com/Greycampus/ruby/blob/master/functions/arms.rb)
 - generate a sequence of primes that are exactly at absolute difference of 1 with powers of 2 - [prime_gen2.rb](https://github.com/Greycampus/ruby/blob/master/functions/prime_gen2.rb)
 - Write a function to find the voting result based on a string input such that a letter represents a party -[votec.rb](https://github.com/Greycampus/ruby/blob/master/functions/votec.rb)
 - factorial of number- [factorial.rb](https://github.com/Greycampus/ruby/blob/master/functions/factorial.rb)
@@ -69,7 +69,7 @@ Regular Expressions
 Object oriented paradigms
 
 - Build a class to store data about mobile and predict the cost as per given conditions -[mclass.rb](https://github.com/Greycampus/ruby/blob/master/oops/mclass.rb)
-- Use the class built in above program as parent and build accesory class for a shop for billing purpose -[accesories.rb](https://github.com/Greycampus/ruby/blob/master/oops/accesories.rb)
+- Use the class built in above program as parent and build accesory class for a shop for billing purpose -[accesory.rb](https://github.com/Greycampus/ruby/blob/master/oops/accesory.rb)
 - Use Function overriding in a class - [over.rb](https://github.com/Greycampus/ruby/blob/master/oops/over.rb)
 - implement a ceaser cipher in a class by inheriting texts from a parent class - [cipher.rb](https://github.com/Greycampus/ruby/blob/master/oops/cipher.rb)
 
@@ -89,4 +89,4 @@ iterators
 Multithreading
 
 - use Multithreading to calculate both GCD and factorial of smallest number in GCD parameters -[gcf.rb](https://github.com/Greycampus/ruby/blob/master/multithreading/gcf.rb)
-- Use multithreding to print alternatly multiples of three and two -[for linux](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_linux.rb) and for windows(https://github.com/Greycampus/ruby/blob/master/multithreading/alter_win.rb)
+- Use multithreding to print alternatly multiples of three and two -[for linux](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_linux.rb) and [for windows](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_win.rb)

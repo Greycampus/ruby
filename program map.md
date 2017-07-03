@@ -89,4 +89,4 @@ iterators
 Multithreading
 
 - use Multithreading to calculate both GCD and factorial of smallest number in GCD parameters -[gcf.rb](https://github.com/Greycampus/ruby/blob/master/multithreading/gcf.rb)
-- Use multithreding to print alternatly multiples of three and two -for linux and for windows-[linux](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_linux.rb),[windows](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_win.rb)
+- Use multithreding to print alternatly multiples of three and two -[for linux](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_linux.rb) and for windows(https://github.com/Greycampus/ruby/blob/master/multithreading/alter_win.rb)

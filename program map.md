@@ -75,7 +75,7 @@ Object oriented paradigms
 
 Serialization
 
-- use Serialization for getting a series of natural numbers -natural.rb
+- use Serialization for getting a series of natural numbers -[natural.rb](https://github.com/Greycampus/ruby/blob/master/serialization/natural.rb)
 
 Exception Handling
 

@@ -36,7 +36,7 @@ loops
 - using loops of your choice and print the alphabets with padding of '-' as given - [abc_rhombus.rb](https://github.com/Greycampus/ruby/blob/master/control_structures/loops/abc_rhombus.rb)
 - check whether a given number is in geometric progression or not given the initial and ratio in series - [geocheck.rb](https://github.com/Greycampus/ruby/blob/master/control_structures/loops/geocheck.rb)
 - using loops make a game bulls and cows - [cowbull.rb](https://github.com/Greycampus/ruby/blob/master/control_structures/loops/cowbull.rb)
-- print a number pyramid for a given number as given using single variable in entire program - [pyramid.rb][https://github.com/Greycampus/ruby/blob/master/control_structures/loops/pyramid.rb]
+- print a number pyramid for a given number as given using single variable in entire program - [pyramid.rb](https://github.com/Greycampus/ruby/blob/master/control_structures/loops/pyramid.rb)
 
 Datatypes recap with control structures
 

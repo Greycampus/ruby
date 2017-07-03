@@ -105,3 +105,117 @@ end
 
 This works because case statements are checked for equality using the === operator, not the == operator. When a regex is on the left hand side of a comparison using ===, it will test a string to see if it matches.
 
+Character classes
+-----------------
+
+Describes ranges of symbols
+
+You can enumerate symbols explicitly
+```ruby
+/[abc]/ # 'a' or 'b' or 'c'
+```
+Or use ranges
+```ruby
+/[a-z]/ # from 'a' to 'z'
+```
+It is possible to combine ranges and single symbols
+```ruby
+/[a-cz]/ # 'a' or 'b' or 'c' or 'z'
+```
+Leading dash (`-`) is treated as character
+```ruby
+/[-a-c]/ # '-' or 'a' or 'b' or 'c'
+```
+Classes can be negative when preceding symbols with `^`
+```ruby
+/[^a-c]/ # Not 'a', 'b' or 'c'
+```
+There are some shortcuts for widespread classes and special characters, plus line endings
+```ruby
+^  # Start of line
+$  # End of line
+\A # Start of string
+\Z # End of string, excluding any new line at the end of string
+\z # End of string
+.  # Any single character
+\s # Any whitespace character
+\S # Any non-whitespace character
+\d # Any digit
+\D # Any non-digit
+\w # Any word character (letter, number, underscore)
+\W # Any non-word character
+\b # Any word boundary
+```
+`\n` will be understood simply as new line
+
+To escape any reserved character, such as `/` or `[]` and others use backslash (left slash)
+```ruby
+\\ # => \
+\[\] # => []
+```
+
+Common quick usage
+------------------
+
+Regular expressions are often used in methods as parameters to check if other strings are present or to search and/or replace strings.
+
+You'll often see the following:
+```ruby
+string = "My not so long string"
+string[/so/] # gives so
+string[/present/] # gives nil
+string[/present/].nil? # gives true
+```
+So you can simply use this as a check if a string contains a substring
+```ruby
+puts "found" if string[/so/]
+```
+More advanced but still short and quick: search for a specific group by using the second parameter, 2 is the second in this example because numbering starts at 1 and not 0, a group is what is enclosed in parentheses.
+```ruby
+string[/(n.t).+(l.ng)/, 2] # gives long
+```
+Also often used: search and replace with `sub` or `gsub`, `\1` gives the first found group,`\2` the second:
+```ruby
+string.gsub(/(n.t).+(l.ng)/, '\1 very \2') # My not very long string
+```
+The last result is remembered and can be used on the following lines
+```ruby
+$2 # gives long
+```
+
+Defining a Regexp
+-----------------
+
+A Regexp can be created in three different ways in Ruby.
+
+- using slashes: `/ /`
+
+- using `%r{}`
+
+- using `Regex.new`
+```ruby
+#The following forms are equivalent
+regexp_slash = /hello/
+regexp_bracket = %r{hello}
+regexp_new = Regexp.new('hello')
+
+string_to_match = "hello world!"
+
+#All of these will return a truthy value
+string_to_match =~ regexp_slash    # => 0
+string_to_match =~ regexp_bracket  # => 0
+string_to_match =~ regexp_new      # => 0
+```
+
+match? - Boolean Result
+-----------------------
+
+
+Returns true or false, which indicates whether the regexp is matched or not without updating $~ and other related variables. If the second parameter is present, it specifies the position in the string to begin the search.
+```ruby
+/R.../.match?("Ruby")    #=> true
+/R.../.match?("Ruby", 1) #=> false
+/P.../.match?("Ruby")    #=> false
+```
+Ruby 2.4+
+

@@ -85,3 +85,8 @@ Exception Handling
 iterators
 
 - using iterators generate the multiples of 2 and 3 -[iterr.rb](https://github.com/Greycampus/ruby/blob/master/iterators/iterr.rb)
+
+Multithreading
+
+- use Multithreading to calculate both GCD and factorial of smallest number in GCD parameters -[gcf.rb](https://github.com/Greycampus/ruby/blob/master/multithreading/gcf.rb)
+- Use multithreding to print alternatly multiples of three and two -for linux and for windows-[linux](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_linux.rb),[windows](https://github.com/Greycampus/ruby/blob/master/multithreading/alter_win.rb)

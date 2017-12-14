@@ -19,7 +19,7 @@ nunber = gets
 number = number.chomp
 #Here the input from the console is type-casted into integer using to_i
 number = number.to_i
-## log(a,b) : ** is used to calculate the find the logaritham of 'a' to the base 'b'
+## log(a,b) : is used to calculate the find the logaritham of 'a' to the base 'b'
 #floor is used to round the float into the greatest integer lesss than or equal to x
 minn = Math.log(number,3).floor
 #ceil is used to round the float into the smallest integer greater than or equal to x
